@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import reasonOne from '../assets/reasonOne.jpg';
 
 function Reason({ imgURL, altText, title, description }) {
   const [isTitleVisible, setIsTitleVisible] = useState(false);

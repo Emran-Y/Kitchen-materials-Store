@@ -5,7 +5,7 @@ body{
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #1e1e1e;
+  background: #1C1C1C;
   overflow-x: hidden;
   margin: 0;
   font-family: karla;
@@ -73,6 +73,80 @@ nav{
   color: red;
   text-shadow: 0px 0px 0px 1px black;
 }
+
+/* styling footer */
+
+footer{
+  background-color: #161619;
+  border-top: 1.5px solid whitesmoke;
+  padding-bottom: 0.6em;
+  border-radius: 5px;
+}
+
+.footer-title{
+  text-align: center;
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  transform: rotate(-10deg);
+  margin-bottom: 35px;
+  margin-top: 30px;
+  font-size: 2.5rem;
+  letter-spacing: 0.3em;
+  /* color: #DCDCDC; */
+  color: #fff;
+  text-shadow: 5px 5px 5px 5px darkred;
+}
+.footer-anchor-tag{
+  display: block;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #e2e1e1;
+}
+.footer-anchor-tag:nth-of-type(1),.footer-anchor-tag:nth-of-type(2){
+  margin-bottom: 1em;
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+  gap:1em;
+}
+.social-medias{
+  margin-top: 1.6em;
+  color: #fff;
+  background-color: #2e2e2e;
+  /* background-color: darkred; */
+  border-radius: 50%;
+  height: 40px;
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.footer-last-elemets{
+  padding-left: 5px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  max-width: 70vw;
+  color: rgb(201, 201, 201);
+}
+.footer-copyright,.footer-last-elements-links{
+  color: rgb(201, 201, 201);
+  font-size: 1em;
+}
+.footer-copyright{
+  align-self: center;
+}
+
+
 
 /* Styling of Home Page */
 
@@ -205,3 +279,5 @@ nav{
   border-radius: 5px;
   padding: 0.3em 0.6em;
 }
+
+
