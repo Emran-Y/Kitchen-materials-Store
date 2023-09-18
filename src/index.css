@@ -77,11 +77,41 @@ nav{
 /* styling footer */
 
 footer{
+  /* padding-bottom: 0.6em; */
+  margin-top: 5em;
+}
+
+.footer-arrow{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(177, 177, 177);
+  font-size: 2.7rem;
+  margin-right: 0;
+  padding-right: 1.2em;
+}
+.footer-arrow:hover{
+  color: white;
+}
+.footer-arrow:hover::after {
+  content: "Back to Top";
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  top: -10px; /* Adjust the positioning as needed */
+  left: 66%; /* Adjust the positioning as needed */
+  transform: translateX(-50%);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.footer-2{
   background-color: #161619;
   border-top: 1.5px solid whitesmoke;
   padding-bottom: 0.6em;
-  border-radius: 5px;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .footer-title{
@@ -97,16 +127,38 @@ footer{
   color: #fff;
   text-shadow: 5px 5px 5px 5px darkred;
 }
+.footer-anchor-tag-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .footer-anchor-tag{
-  display: block;
+  position: relative;
   font-weight: 300;
   font-size: 1.3rem;
-  text-align: center;
+  margin: auto 0;
   letter-spacing: 0.06em;
   color: #e2e1e1;
 }
 .footer-anchor-tag:nth-of-type(1),.footer-anchor-tag:nth-of-type(2){
   margin-bottom: 1em;
+}
+.footer-anchor-tag::after{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.5s ease-in-out;
+}
+.footer-anchor-tag:hover::after{
+  width: 100%;
+}
+.footer-anchor-tag:hover{
+  font-weight: bold;
 }
 .social-media{
   display: flex;
@@ -115,16 +167,21 @@ footer{
 }
 .social-medias{
   margin-top: 1.6em;
-  color: #fff;
+  color: #cac8c8;
   background-color: #2e2e2e;
   /* background-color: darkred; */
   border-radius: 50%;
-  height: 40px;
-  width: 8vw;
+  height: 30px;
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  padding: 0.25em;
+}
+.social-medias:hover{
+  color: #fff;
+  font-weight: bold;
 }
 
 .footer-last-elemets{
@@ -141,10 +198,14 @@ footer{
 }
 .footer-copyright,.footer-last-elements-links{
   color: rgb(201, 201, 201);
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .footer-copyright{
   align-self: center;
+}
+.footer-last-elements-links:hover{
+  color: white;
+  font-weight: bold;
 }
 
 

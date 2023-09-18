@@ -1,4 +1,5 @@
 import React from 'react'
+import { BiUpArrowCircle } from 'react-icons/bi';
 import { FaFacebookF } from "react-icons/fa6";
 import {FaTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from 'react-icons/io5';
@@ -16,12 +17,14 @@ function Footer() {
 
   return (
     <footer>
-        <div></div>
+        <a className='footer-arrow' href='#'><BiUpArrowCircle/></a>
         <aside className='footer-2'>
             <h2 className='footer-title'>Fatuma</h2>
-            <a className='footer-anchor-tag' href='#'>Support</a>
-            <a className='footer-anchor-tag' href='#'>About</a>
-            <a className='footer-anchor-tag' href='#'>Jobs</a>
+            <nav className='footer-anchor-tag-container'>
+                <a className='footer-anchor-tag' href='#'>Support</a>
+                <a className='footer-anchor-tag' href='#'>About</a>
+                <a className='footer-anchor-tag' href='#'>Jobs</a>
+            </nav>
             <div className='social-media'>
                 <a href='#' className='social-medias'>
                     <FaFacebookF/>
