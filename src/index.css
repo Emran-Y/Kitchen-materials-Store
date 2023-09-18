@@ -81,6 +81,11 @@ footer{
   margin-top: 5em;
 }
 
+.footer-arrow-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .footer-arrow{
   position: relative;
   display: flex;
@@ -88,7 +93,8 @@ footer{
   color: rgb(177, 177, 177);
   font-size: 2.7rem;
   margin-right: 0;
-  padding-right: 1.2em;
+  padding-right: 0.8em;
+  padding-left: 3em;
 }
 .footer-arrow:hover{
   color: white;
@@ -99,8 +105,8 @@ footer{
   color: white;
   padding: 5px;
   position: absolute;
-  top: -10px; /* Adjust the positioning as needed */
-  left: 66%; /* Adjust the positioning as needed */
+  top: -13px; /* Adjust the positioning as needed */
+  left: 50%; /* Adjust the positioning as needed */
   transform: translateX(-50%);
   border-radius: 5px;
   font-size: 0.8rem;

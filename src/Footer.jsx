@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <footer>
-        <a className='footer-arrow' href='#'><BiUpArrowCircle/></a>
+        <div className='footer-arrow-wrapper'><a className='footer-arrow' href='#'><BiUpArrowCircle/></a></div>
         <aside className='footer-2'>
             <h2 className='footer-title'>Fatuma</h2>
             <nav className='footer-anchor-tag-container'>
